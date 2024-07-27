@@ -1,0 +1,47 @@
+	// async function showHeatMap() {
+	// 	console.log("here");
+	// 	try {
+	// 		heatmapInstance = h337.create({
+	// 			container: heatmapContainer.current,
+	// 			radius: 20,
+	// 		});
+	// 		const res = await fetch("http://localhost:5000/", {
+	// 			method: "GET",
+	// 		});
+	// 		const myheatData = await res.json();
+	// 		console.log(myheatData);
+	// 		heatmapInstance.setData({
+	// 			max: 50,
+	// 			min: 0,
+	// 			data: myheatData.aggregatedData,
+	// 		});
+	// 	} catch (error) {
+	// 		console.error(error);
+	// 	}
+	// }
+
+    {/* <button onClick={() => showHeatMap()}>Show Heatmap</button> */}
+
+
+	async function sendData() {
+		const dataToSend = {
+			data: heatData,
+		};
+
+		try {
+			const res = await fetch("http://localhost:5000/", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(dataToSend), // Directly stringify the dataToSend object
+			});
+
+			const message = await res.json();
+			console.log(message);
+		} catch (error) {
+			console.error(error);
+		}
+	}
+
+	<button onClick={() => sendData()}>Send Heatmap</button>
