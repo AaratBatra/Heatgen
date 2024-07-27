@@ -100,7 +100,7 @@ This tech stack ensures that HeatGen is built on a modern, efficient, and scalab
 
 Contributions are always welcome!
 
-See `contributing.md` for ways to get started.
+See [contributing.md](https://github.com/AaratBatra/Heatgen/blob/master/contributing.md) for ways to get started.
 
 Please adhere to this project's `code of conduct`.
 
