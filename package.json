@@ -1,0 +1,37 @@
+{
+  "name": "heatgen",
+  "version": "1.0.0",
+  "description": "Get dynamic real-time heatmaps for your website and boost your marketing",
+  "main": "index.js",
+  "scripts": {
+    "install-backend": "cd heatgen_backend && npm install",
+    "install-frontend": "cd heatgen_client && npm install",
+    "install-dashboard": "cd heatgen_dashboard && npm install",
+    "install-concurrently": "npm install -g concurrently",
+    "install-dep": "npm run install-backend && npm run install-frontend && npm run install-dashboard",
+    "install-all": "npm run install-dep && npm run install-concurrently",
+    "backend": "cd heatgen_backend && npm run dev",
+    "frontend": "cd heatgen_frontend && npm run dev",
+    "dashboard": "cd heatgen_dashboard && npm run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\" \"npm run dashboard\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AaratBatra/Heatgen.git"
+  },
+  "keywords": [
+    "heatmaps",
+    "analytics",
+    "nextjs",
+    "flask",
+    "node",
+    "react",
+    "websockets"
+  ],
+  "author": "Aarat Batra, Aditya Choudhary",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AaratBatra/Heatgen/issues"
+  },
+  "homepage": "https://github.com/AaratBatra/Heatgen#readme"
+}
