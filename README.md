@@ -28,7 +28,7 @@ Heatgen is a free and open-source tool designed to provide real-time heatmaps an
 
 ## Demo
 
-[Demo Video](https://drive.google.com/file/d/1y-2o9ANNt_CA4ZoELIFer-7DUdORBNra/view?usp=sharing)
+[Demo Video](https://shorturl.at/hCgBz)
 
 
 ## Installation
